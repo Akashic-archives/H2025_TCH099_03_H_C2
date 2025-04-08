@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Liar\'s Chess</string>
+    <string name="not_called">Not Called</string>
 </resources>
