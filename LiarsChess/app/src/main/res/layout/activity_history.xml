@@ -85,4 +85,13 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.075
 " />
+
+    <Button
+        android:id="@+id/LogOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
