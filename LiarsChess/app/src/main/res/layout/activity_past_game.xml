@@ -43,9 +43,9 @@
             android:layout_height="60dp"
             android:background="#546c64"
             app:layout_constraintBottom_toTopOf="@+id/GamerNameW"
-            app:srcCompat="@drawable/whiteKing"
-            tools:layout_editor_absoluteX="44dp"
-            tools:ignore="MissingConstraints" />
+            app:srcCompat="@drawable/white_king"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="44dp" />
 
         <TextView
             android:id="@+id/gamerNameB"
@@ -695,7 +695,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:alpha="50"
-            app:srcCompat="@drawable/blackBishop"
+            app:srcCompat="@drawable/black_bishop"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="205dp"
             tools:layout_editor_absoluteY="260dp" />
@@ -705,7 +705,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:visibility="visible"
-            app:srcCompat="@drawable/blackBishop"
+            app:srcCompat="@drawable/black_bishop"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="245dp"
             tools:layout_editor_absoluteY="300dp" />
@@ -715,7 +715,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:alpha="0.5"
-            app:srcCompat="@drawable/blackKing"
+            app:srcCompat="@drawable/black_king"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="125dp"
             tools:layout_editor_absoluteY="180dp" />
@@ -724,7 +724,7 @@
             android:id="@+id/black_rook"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/blackRook"
+            app:srcCompat="@drawable/black_rook"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="45dp"
             tools:layout_editor_absoluteY="220dp" />
@@ -733,7 +733,7 @@
             android:id="@+id/black_horse"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/blackKnight"
+            app:srcCompat="@drawable/black_knight"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="245dp"
             tools:layout_editor_absoluteY="259dp" />
@@ -743,7 +743,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:alpha="0.5"
-            app:srcCompat="@drawable/blackQueen"
+            app:srcCompat="@drawable/black_queen"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="85dp"
             tools:layout_editor_absoluteY="299dp" />
@@ -768,7 +768,7 @@
             android:layout_height="60dp"
             android:background="#546c64"
             app:layout_constraintBottom_toTopOf="@+id/gamerNameB"
-            app:srcCompat="@drawable/blackKing"
+            app:srcCompat="@drawable/black_king"
             tools:layout_editor_absoluteX="307dp"
             tools:ignore="MissingConstraints" />
 
@@ -776,7 +776,7 @@
             android:id="@+id/white_rook"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/whiteRook"
+            app:srcCompat="@drawable/white_rook"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="125dp"
             tools:layout_editor_absoluteY="340dp" />
@@ -785,7 +785,7 @@
             android:id="@+id/white_knight"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/whiteKnight"
+            app:srcCompat="@drawable/white_knight"
             tools:ignore="ContentDescription,MissingConstraints"
             tools:layout_editor_absoluteX="245dp"
             tools:layout_editor_absoluteY="340dp" />
@@ -795,7 +795,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:alpha="0.5"
-            app:srcCompat="@drawable/whitePawn"
+            app:srcCompat="@drawable/white_pawn"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="300dp" />
@@ -805,7 +805,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:alpha="0.5"
-            app:srcCompat="@drawable/whiteKing"
+            app:srcCompat="@drawable/white_king"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="339dp" />

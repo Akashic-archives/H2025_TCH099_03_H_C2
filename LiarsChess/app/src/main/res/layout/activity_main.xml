@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/MainInputPassword"
         android:layout_width="321dp"
         android:layout_height="53dp"
         android:background="#162b22"
@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/MainInputUsername" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -45,7 +45,7 @@
         app:layout_constraintGuide_begin="237dp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/MainInputUsername"
         android:layout_width="321dp"
         android:layout_height="53dp"
         android:background="#162b22"
