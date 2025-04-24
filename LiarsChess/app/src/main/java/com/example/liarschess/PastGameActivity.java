@@ -17,8 +17,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class PastGameActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private GridLayout cboard;
+    
 
+    private ImageView display;
     private Button PastGameButtonReturn;
 
     ActivityResultLauncher<Intent> activityResultLauncher;
@@ -30,12 +31,12 @@ public class PastGameActivity extends AppCompatActivity implements View.OnClickL
 
         //PastGameButtonReturn = (Button) findViewById(R.id.PastGameButtonReturn);
 
-        cboard = findViewById(R.id.chessgrid);
-        drawcBoard();
+
 
         PastGameButtonReturn.setOnClickListener(this);
 
-        activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+        activityResultLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(), result -> {
         });
 
     }
@@ -46,22 +47,12 @@ public class PastGameActivity extends AppCompatActivity implements View.OnClickL
         activityResultLauncher.launch(intent);
     }
 
-    private void drawcBoard(){
-        View view;
-
-        for(int i = 0; i <8; i++){
-            for (int j = 0; j < 8 ; j++){
-                ImageView square = new ImageView(this);
-
-                if((i+j) % 2 == 0){
-                    square.setImageResource(R.drawable.light_tile);
-                }else{
-                    square.setImageResource(R.drawable.dark_tile);
-                }
-            }
-        }
-
+    private void nextTurn(){
 
     }
+    private void pastTurn(){
+
+    }
+
 
 }

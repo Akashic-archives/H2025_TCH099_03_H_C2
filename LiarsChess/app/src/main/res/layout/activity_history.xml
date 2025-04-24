@@ -7,13 +7,13 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:backgroundTint="#294D3C"
-    tools:context=".HIstoryActivity">
+    tools:context=".HistoryActivity">
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="1191dp"
         android:layout_height="591dp"
-        android:src="@drawable/Background"
+        android:src="@drawable/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,12 +21,14 @@
 
     <ListView
         android:id="@+id/gameList"
-        android:layout_width="351dp"
-        android:layout_height="572dp"
+        android:layout_width="401dp"
+        android:layout_height="510dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline16"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.882" />
 
     <TextView
         android:id="@+id/textView5"
@@ -37,6 +39,7 @@
         android:textColor="#eeeed2"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toTopOf="@+id/guideline9" />
 

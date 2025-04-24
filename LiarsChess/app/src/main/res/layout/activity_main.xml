@@ -12,10 +12,11 @@
         android:id="@+id/imageView2"
         android:layout_width="575dp"
         android:layout_height="771dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/Background"
-        tools:layout_editor_absoluteY="66dp" />
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/background" />
 
     <EditText
         android:id="@+id/MainInputPassword"
@@ -101,6 +102,6 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/GameLogo_light" />
+        app:srcCompat="@drawable/gamelogo_light" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

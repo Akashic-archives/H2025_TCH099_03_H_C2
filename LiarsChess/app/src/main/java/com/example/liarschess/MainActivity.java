@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         MainButtonConnection.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){logInRequest(MainInputEmail.getText().toString());}
+            public void onClick(View v){loginbypass();/*logInRequest(MainInputEmail.getText().toString());*/}
         });
         HistoryActivityLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
         );
 
         }
+    private void loginbypass(){
+        Intent intent = new Intent(this,HistoryActivity.class);
+        HistoryActivityLauncher.launch(intent);
+    }
 
     private void logInRequest(String emailInput) {
         Intent intent = new Intent(this, MainActivity.class);

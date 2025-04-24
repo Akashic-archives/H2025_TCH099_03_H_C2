@@ -1,17 +1,30 @@
 package com.example.liarschess.Entity;
 
 public class Game {
-    String GameID;
-    String WinnerID;
+String [] PieceNumber, InitialPosition, Type, State, CurrentPosition;
 
-    public Game(){}
-    public Game(String GameID, String WinnerID){
-        this.GameID = GameID;
-        this.WinnerID = WinnerID;
+String whiteplayer;
+String blackplayer;
+
+public Game(String white,String black){
+    this.whiteplayer = white;
+    this.blackplayer = black;
+
+}
+
+    public String getBlackplayer() {
+        return blackplayer;
     }
 
-    public String getGameID() {return GameID;}
-    public void setGameID(String gameID) {GameID = gameID;}
-    public String getWinnerID() {return WinnerID;}
-    public void setWinnerID(String winnerID) {WinnerID = winnerID;}
+    public void setBlackplayer(String blackplayer) {
+        this.blackplayer = blackplayer;
+    }
+
+    public String getWhiteplayer() {
+        return whiteplayer;
+    }
+
+    public void setWhiteplayer(String whiteplayer) {
+        this.whiteplayer = whiteplayer;
+    }
 }
