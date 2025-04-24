@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
@@ -14,8 +15,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.List;
+
 public class HistoryActivity extends AppCompatActivity implements View.OnClickListener {
-    private Spinner HistorySpinnerFriends, HistorySpinnerGames;
+    private ListView HistoryListFriends, HistoryListGames;
     private Button HistoryButtonNext;
 
     private ActivityResultLauncher<Intent> activityResultLauncher;
@@ -25,11 +28,11 @@ public class HistoryActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
-        /*
-        HistorySpinnerFriends = (Spinner) findViewById(R.id.HistorySpinnerFriends);
-        HistorySpinnerGames = (Spinner) findViewById(R.id.HistorySpinnerGames);
-        HistoryButtonNext = (Spinner) findViewById(R.id.HistoryButtonNext);
-        */
+
+        HistoryListFriends = (ListView) findViewById(R.id.friendList);
+        HistoryListGames = (ListView) findViewById(R.id.gameList);
+        HistoryButtonNext = (Button) findViewById(R.id.LogOutButton);
+
 
         HistoryButtonNext.setOnClickListener(this);
 

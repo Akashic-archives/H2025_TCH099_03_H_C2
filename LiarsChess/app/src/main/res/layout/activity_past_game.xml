@@ -17,7 +17,7 @@
         android:background="#274939"
         tools:context=".PastGameActivity"
         tools:ignore="ExtraText"
-        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
 
@@ -58,286 +58,41 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline11"
-            app:layout_constraintStart_toEndOf="@+id/GamerNameW" />
+            app:layout_constraintStart_toEndOf="@+id/GamerNameW" /><![CDATA[
 
-        <ImageView
-            android:id="@+id/imageView42"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="180dp" />
 
-        <ImageView
-            android:id="@+id/imageView43"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="325dp"
-            tools:layout_editor_absoluteY="220dp" />
 
-        <ImageView
-            android:id="@+id/imageView44"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="260dp" />
 
-        <ImageView
-            android:id="@+id/imageView45"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="325dp"
-            tools:layout_editor_absoluteY="299dp" />
 
-        <ImageView
-            android:id="@+id/imageView46"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="339dp" />
 
-        <ImageView
-            android:id="@+id/imageView47"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="325dp"
-            tools:layout_editor_absoluteY="379dp" />
 
-        <ImageView
-            android:id="@+id/imageView22"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="260dp" />
 
-        <ImageView
-            android:id="@+id/imageView23"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="300dp" />
 
-        <ImageView
-            android:id="@+id/imageView24"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="339dp" />
+        />
 
-        <ImageView
-            android:id="@+id/imageView25"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="379dp" />
 
-        <ImageView
-            android:id="@+id/imageView26"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="340dp" />
 
-        <ImageView
-            android:id="@+id/imageView27"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="299dp" />
 
-        <ImageView
-            android:id="@+id/imageView28"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="380dp" />
 
-        <ImageView
-            android:id="@+id/imageView29"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="140dp" />
+        />
 
-        <ImageView
-            android:id="@+id/imageView30"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="100dp" />
 
-        <ImageView
-            android:id="@+id/imageView31"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="139dp" />/>
 
-        <ImageView
-            android:id="@+id/imageView32"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="180dp" />/>
 
-        <ImageView
-            android:id="@+id/imageView33"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="220dp" />
 
-        <ImageView
-            android:id="@+id/imageView34"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="260dp" />
 
-        <ImageView
-            android:id="@+id/imageView35"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="260dp" />
 
-        <ImageView
-            android:id="@+id/imageView36"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="340dp" />
 
-        <ImageView
-            android:id="@+id/imageView37"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="220dp" />
 
-        <ImageView
-            android:id="@+id/imageView38"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="300dp" />
 
-        <ImageView
-            android:id="@+id/imageView39"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="379dp" />
 
-        <ImageView
-            android:id="@+id/imageView40"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="100dp" />
 
-        <ImageView
-            android:id="@+id/imageView41"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="325dp"
-            tools:layout_editor_absoluteY="140dp" />
 
-        <ImageView
-            android:id="@+id/imageView21"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="180dp" />
 
-        <ImageView
-            android:id="@+id/imageView18"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="140dp" />
 
-        <ImageView
-            android:id="@+id/imageView17"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="100dp" />
 
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="179dp" />
 
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="140dp" />
+        ]]>
 
         <Spinner
             android:id="@+id/TurnList"
@@ -376,375 +131,22 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.1" />
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="299dp" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="100dp" />
-
-        <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="100dp" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="140dp" />
-
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="179dp" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="219dp" />
-
-        <ImageView
-            android:id="@+id/imageView20"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/light_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="220dp" />
-
-        <ImageView
-            android:id="@+id/imageView48"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="379dp" />
-
-        <ImageView
-            android:id="@+id/imageView49"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="380dp" />
-
-        <ImageView
-            android:id="@+id/imageView50"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="380dp" />
-
-        <ImageView
-            android:id="@+id/imageView51"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="379dp" />
-
-        <ImageView
-            android:id="@+id/imageView52"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="325dp"
-            tools:layout_editor_absoluteY="340dp" />
-
-        <ImageView
-            android:id="@+id/imageView53"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="339dp" />
-
-        <ImageView
-            android:id="@+id/imageView54"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="339dp" />
-
-        <ImageView
-            android:id="@+id/imageView55"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="340dp" />
-
-        <ImageView
-            android:id="@+id/imageView56"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="260dp" />
-
-        <ImageView
-            android:id="@+id/imageView57"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="219dp" />
-
-        <ImageView
-            android:id="@+id/imageView58"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="299dp" />
-
-        <ImageView
-            android:id="@+id/imageView59"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="259dp" />
-
-        <ImageView
-            android:id="@+id/imageView60"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="179dp" />
-
-        <ImageView
-            android:id="@+id/imageView61"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="100dp" />
-
-        <ImageView
-            android:id="@+id/imageView62"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="100dp" />
-
-        <ImageView
-            android:id="@+id/imageView63"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="140dp" />
-
-        <ImageView
-            android:id="@+id/imageView64"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="220dp" />
-
-        <ImageView
-            android:id="@+id/imageView65"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="300dp" />
-
-        <ImageView
-            android:id="@+id/imageView66"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="260dp" />
-
-        <ImageView
-            android:id="@+id/imageView67"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="299dp" />
-
-        <ImageView
-            android:id="@+id/imageView68"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="325dp"
-            tools:layout_editor_absoluteY="260dp" />
-
-        <ImageView
-            android:id="@+id/imageView69"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="179dp" />
-
-        <ImageView
-            android:id="@+id/imageView70"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="140dp" />
-
-        <ImageView
-            android:id="@+id/imageView71"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="220dp" />
-
-        <ImageView
-            android:id="@+id/imageView72"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="325dp"
-            tools:layout_editor_absoluteY="179dp" />
-
-        <ImageView
-            android:id="@+id/imageView73"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/dark_tile"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="325dp"
-            tools:layout_editor_absoluteY="99dp" />
-
         <TextView
             android:id="@+id/CallLabel"
             android:layout_width="86dp"
             android:layout_height="33dp"
-            android:layout_marginBottom="276dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="244dp"
             android:background="#66c394"
             android:gravity="center"
             android:text="@string/not_called"
             android:textColor="#37474F"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline11"
-            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintHorizontal_bias="0.904"
             app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toBottomOf="@+id/chessgrid"
             tools:ignore="TextSizeCheck" />
-
-        <ImageView
-            android:id="@+id/black_rook1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:alpha="50"
-            app:srcCompat="@drawable/black_bishop"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="260dp" />
-
-        <ImageView
-            android:id="@+id/black_rook2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:visibility="visible"
-            app:srcCompat="@drawable/black_bishop"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="300dp" />
-
-        <ImageView
-            android:id="@+id/black_king"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:alpha="0.5"
-            app:srcCompat="@drawable/black_king"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="180dp" />
-
-        <ImageView
-            android:id="@+id/black_rook"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/black_rook"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="220dp" />
-
-        <ImageView
-            android:id="@+id/black_horse"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/black_knight"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="259dp" />
-
-        <ImageView
-            android:id="@+id/black_queen"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:alpha="0.5"
-            app:srcCompat="@drawable/black_queen"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="299dp" />
 
         <TextView
             android:id="@+id/GamerNameW"
@@ -766,46 +168,8 @@
             android:background="#546c64"
             app:layout_constraintBottom_toTopOf="@+id/gamerNameB"
             app:srcCompat="@drawable/black_king"
-            tools:layout_editor_absoluteX="307dp"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/white_rook"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/white_rook"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="125dp"
-            tools:layout_editor_absoluteY="340dp" />
-
-        <ImageView
-            android:id="@+id/white_knight"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/white_knight"
-            tools:ignore="ContentDescription,MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="340dp" />
-
-        <ImageView
-            android:id="@+id/white_rook2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:alpha="0.5"
-            app:srcCompat="@drawable/white_pawn"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="300dp" />
-
-        <ImageView
-            android:id="@+id/white_king"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:alpha="0.5"
-            app:srcCompat="@drawable/white_king"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="165dp"
-            tools:layout_editor_absoluteY="339dp" />
+            tools:layout_editor_absoluteX="307dp" />
 
         <Button
             android:id="@+id/Previous_Turn"
@@ -843,6 +207,16 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline11"
             app:layout_constraintStart_toStartOf="@+id/guideline10" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/chessgrid"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline13">
+
+        </androidx.gridlayout.widget.GridLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

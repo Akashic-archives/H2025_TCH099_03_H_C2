@@ -9,25 +9,14 @@
     android:backgroundTint="#294D3C"
     tools:context=".HIstoryActivity">
 
-    <Spinner
-        android:id="@+id/FriendList"
-        android:layout_width="152dp"
-        android:layout_height="39dp"
-        android:background="#749355"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        tools:layout_editor_absoluteY="119dp" />
-
-    <Spinner
-        android:id="@+id/GameList"
-        android:layout_width="152dp"
-        android:layout_height="39dp"
-        android:background="#749355"
+    <ListView
+        android:id="@+id/gameList"
+        android:layout_width="169dp"
+        android:layout_height="542dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        tools:layout_editor_absoluteY="119dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView"
@@ -37,7 +26,6 @@
         android:text="Friends"
         android:textColor="#eeeed2"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/FriendList"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toTopOf="@+id/guideline9" />
@@ -50,7 +38,6 @@
         android:text="Game history"
         android:textColor="#eeeed2"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/GameList"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="@+id/guideline9" />
@@ -94,4 +81,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+    <ListView
+        android:id="@+id/friendList"
+        android:layout_width="169dp"
+        android:layout_height="542dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="664dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,8 @@
-package com.example.liarschess;
+package com.example.liarschess.Entity;
 
 public class User {
+
+    private String email;
     private String friends[];
     private String games[];
     private String name;
@@ -11,6 +13,8 @@ public class User {
         this.password = password;
     }
 
+    public String getEmail() {return email;}
+    public void setEmail(String email) {this.email = email;}
     public String[] getFriends() {
         return friends;
     }

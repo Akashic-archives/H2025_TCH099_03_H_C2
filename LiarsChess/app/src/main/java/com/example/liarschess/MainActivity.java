@@ -8,79 +8,100 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.example.liarschess.Daos.HttpJsonService;
+import com.example.liarschess.Entity.User;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.IOException;
+import java.net.URLEncoder;
+import java.util.Arrays;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
+
+public class MainActivity extends AppCompatActivity {
 
     private final String TAG = "MainActivity";
 
-    private EditText MainInputUsername, MainInputPassword;
+    private EditText MainInputEmail, MainInputPassword;
     private Button MainButtonConnection;
 
-    private ActivityResultLauncher<Intent> activityResultLauncher;
+    private ActivityResultLauncher<Intent> HistoryActivityLauncher;
 
-    private User user;
-    private User users[];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MainInputUsername = (EditText) findViewById(R.id.MainInputUsername);
+        MainInputEmail = (EditText) findViewById(R.id.MainInputUsername);
         MainInputPassword = (EditText) findViewById(R.id.MainInputPassword);
         MainButtonConnection = (Button) findViewById(R.id.LogButton);
 
-        MainButtonConnection.setOnClickListener(this);
-
-        activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {});
-
-        }
-
-    @Override
-    public void onClick(View v) {
-        if (!MainInputUsername.getText().toString().isEmpty() && !MainInputPassword.getText().toString().isEmpty()) {
-            if (true) { //authentificate()) { TODO: change this to use authentificate
-                Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
-                activityResultLauncher.launch(intent);
-            } else
-                Toast.makeText(MainActivity.this, "Erreur d'authentification", Toast.LENGTH_LONG).show();
-        } else
-            Toast.makeText(MainActivity.this, "Veuillez remplir tous les champs", Toast.LENGTH_LONG).show();
-    }
-
-    private boolean authentificate() {
-
-        Thread getUtilisateursThead = new Thread() {
+        MainButtonConnection.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void run() {
-                try {
-                    users = HttpJsonClientsDao.getInstance().getUsers();
-                } catch (RuntimeException e) {
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Log.e(TAG, "error", e);
+            public void onClick(View v){logInRequest(MainInputEmail.getText().toString());}
+        });
+        HistoryActivityLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult o) {
+                        if(o.getResultCode() == RESULT_OK){
+                            Toast.makeText(MainActivity.this,"Login Successful",Toast.LENGTH_SHORT);
                         }
-                    });
+                    }
                 }
-            }
-        };
+        );
 
-        getUtilisateursThead.start();
-
-        for (User user: users) {
-            if (user.getName().equals(MainInputUsername.getText().toString()) && user.getPassword().equals(MainInputPassword.getText().toString())) {
-                return true;
-            }
         }
-        Toast.makeText(MainActivity.this, "Erreur d'authentification", Toast.LENGTH_LONG).show();
-        return false;
+
+    private void logInRequest(String emailInput) {
+        Intent intent = new Intent(this, MainActivity.class);
+
+        new Thread(() -> {
+            try {
+                String emailEncoded = URLEncoder.encode(emailInput, "UTF-8");
+                final String URL = "http://10.0.2.2:3000/api/user/" + emailEncoded;
+
+                OkHttpClient huser = new OkHttpClient();
+                Request request = new Request.Builder().url(URL).build();
+                Response response = huser.newCall(request).execute();
+                ResponseBody responseBody = response.body();
+
+                if (responseBody != null) {
+                    String jsonStr = responseBody.string();
+                    Log.d(TAG, "Server Output : " + jsonStr);
+                    ObjectMapper mapper = new ObjectMapper();
+                    String[] password = mapper.readValue(jsonStr, String[].class);
+                    Log.d(TAG, "Target Client :" + Arrays.toString(password));
+
+                    if (password.length == 0) {
+                        runOnUiThread(() -> Toast.makeText(MainActivity.this, "Wrong Email", Toast.LENGTH_SHORT).show());
+                        return;
+                    }
+
+
+                    String passwdInput = MainInputPassword.getText().toString();
+                    if (password.equals(passwdInput)) {
+                        intent.putExtra("ID_USER", user.getEmail());
+                        runOnUiThread(() -> HistoryActivityLauncher.launch(intent));
+                    } else {
+                        runOnUiThread(() -> Toast.makeText(MainActivity.this, "Wrong Password", Toast.LENGTH_SHORT).show());
+                    }
+                }
+            } catch (IOException e) {
+                Log.e(TAG, "Network error", e);
+                runOnUiThread(() -> Toast.makeText(MainActivity.this, "Connection Error", Toast.LENGTH_SHORT).show());
+            }
+        }).start();
     }
 }
