@@ -37,23 +37,6 @@ public class HttpJsonService {
         return instance;
     }
 
-    public List<User> getfriends(String userID) throws IOException {
-        String url = USER_URL+"?";
-        if(userID != null && !userID.isEmpty()) url += "UserID="+userID+"&";
-
-        Request request = new Request.Builder().url(url).build();
-        Response response = client.newCall(request).execute();
-        ResponseBody responseBody = response.body();
-
-        if(responseBody != null){
-            String jsonstr = responseBody.string();
-            ObjectMapper mapper = new ObjectMapper();
-            return Arrays.asList(mapper.readValue(jsonstr, User[].class));
-        }
-        return Collections.emptyList();
-
-    }
-
     public List<Game> getGames(String gameID) throws IOException {
         String url = GAME_URL+"?";
         if(gameID != null && !gameID.isEmpty()) url += "UserID="+gameID+"&";
@@ -70,35 +53,6 @@ public class HttpJsonService {
         return Collections.emptyList();
 
     }
-
-    public List<Turn> getTurns() throws IOException {
-        Request request = new Request.Builder().url(TURN_URL).build();
-        Response response = client.newCall(request).execute();
-        ResponseBody responseBody = response.body();
-
-        if(responseBody != null){
-            String jsonstr = responseBody.string();
-            ObjectMapper mapper = new ObjectMapper();
-            return Arrays.asList(mapper.readValue(jsonstr, Turn[].class));
-        }
-        return Collections.emptyList();
-
-    }
-    public List<Piece> getPieces() throws IOException {
-        Request request = new Request.Builder().url(PIECE_URL).build();
-        Response response = client.newCall(request).execute();
-        ResponseBody responseBody = response.body();
-
-        if(responseBody != null){
-            String jsonstr = responseBody.string();
-            ObjectMapper mapper = new ObjectMapper();
-            return Arrays.asList(mapper.readValue(jsonstr, Piece[].class));
-        }
-        return Collections.emptyList();
-
-    }
-
-
 
 }
 

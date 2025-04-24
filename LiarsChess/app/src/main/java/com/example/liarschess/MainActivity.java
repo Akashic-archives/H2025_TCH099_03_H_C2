@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d(TAG, "Server Output : " + jsonStr);
                     ObjectMapper mapper = new ObjectMapper();
                     String[] password = mapper.readValue(jsonStr, String[].class);
-                    Log.d(TAG, "Target Client :" + Arrays.toString(password));
+                    Log.d(TAG, "Target User :" + Arrays.toString(password));
 
                     if (password.length == 0) {
                         runOnUiThread(() -> Toast.makeText(MainActivity.this, "Wrong Email", Toast.LENGTH_SHORT).show());
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
                     String passwdInput = MainInputPassword.getText().toString();
                     if (password.equals(passwdInput)) {
-                        intent.putExtra("ID_USER", user.getEmail());
+                        intent.putExtra("EMAIL_USER", emailInput);
                         runOnUiThread(() -> HistoryActivityLauncher.launch(intent));
                     } else {
                         runOnUiThread(() -> Toast.makeText(MainActivity.this, "Wrong Password", Toast.LENGTH_SHORT).show());

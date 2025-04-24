@@ -8,6 +8,15 @@
     android:background="#294D3C"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="575dp"
+        android:layout_height="771dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/Background"
+        tools:layout_editor_absoluteY="66dp" />
+
     <EditText
         android:id="@+id/MainInputPassword"
         android:layout_width="321dp"
@@ -28,21 +37,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.14" />
+        app:layout_constraintGuide_percent="0.27" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.46" />
+        app:layout_constraintGuide_percent="0.6" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="237dp" />
+        app:layout_constraintGuide_begin="320dp" />
 
     <EditText
         android:id="@+id/MainInputUsername"
@@ -71,21 +80,6 @@
         android:orientation="vertical"
         app:layout_constraintGuide_end="17dp" />
 
-    <TextView
-        android:id="@+id/Title"
-        android:layout_width="274dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:text="Liar's Chess"
-        android:textColor="#eeeed2"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/LogButton"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -98,5 +92,15 @@
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:strokeColor="#B64141" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="164dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/GameLogo_light" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

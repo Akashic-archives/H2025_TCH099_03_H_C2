@@ -9,26 +9,24 @@
     android:backgroundTint="#294D3C"
     tools:context=".HIstoryActivity">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="1191dp"
+        android:layout_height="591dp"
+        android:src="@drawable/Background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ListView
         android:id="@+id/gameList"
-        android:layout_width="169dp"
-        android:layout_height="542dp"
+        android:layout_width="351dp"
+        android:layout_height="572dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline16"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#162b22"
-        android:text="Friends"
-        android:textColor="#eeeed2"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView5"
@@ -39,7 +37,7 @@
         android:textColor="#eeeed2"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -48,14 +46,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.05
-" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5
 " />
 
     <androidx.constraintlayout.widget.Guideline
@@ -70,8 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.075
-" />
+        app:layout_constraintGuide_percent="0.05" />
 
     <Button
         android:id="@+id/LogOutButton"
@@ -79,17 +68,8 @@
         android:layout_height="wrap_content"
         android:text="Log out"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintStart_toStartOf="@+id/guideline6" />
-
-    <ListView
-        android:id="@+id/friendList"
-        android:layout_width="169dp"
-        android:layout_height="542dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline16"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline16"
@@ -97,4 +77,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="664dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

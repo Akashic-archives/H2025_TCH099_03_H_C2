@@ -18,7 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.List;
 
 public class HistoryActivity extends AppCompatActivity implements View.OnClickListener {
-    private ListView HistoryListFriends, HistoryListGames;
+    private ListView HistoryListGames;
     private Button HistoryButtonNext;
 
     private ActivityResultLauncher<Intent> activityResultLauncher;
@@ -29,12 +29,12 @@ public class HistoryActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_history);
 
 
-        HistoryListFriends = (ListView) findViewById(R.id.friendList);
+
         HistoryListGames = (ListView) findViewById(R.id.gameList);
         HistoryButtonNext = (Button) findViewById(R.id.LogOutButton);
 
 
-        HistoryButtonNext.setOnClickListener(this);
+        HistoryButtonNext.setOnClickListener();
 
         activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {});
 
